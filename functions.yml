@@ -5,3 +5,10 @@ TodoGetAll:
         method: get
         path: todos/all
         cors: true
+TodoAdd:
+  handler: src/todo/add.add
+  events:
+    - http:
+        method: post
+        path: todo
+        cors: true
